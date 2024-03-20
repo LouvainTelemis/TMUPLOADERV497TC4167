@@ -372,7 +372,7 @@ Test02
 Test03
     [Documentation]    Access the login page of TM-Uploader
     [Tags]    CRITICALITY NORMAL
-    Open Browser    https://${MyHostname}:10210/webuploader    Chrome    options=add_argument("--disable-infobars");add_argument("--lang\=en");binary_location=r"C:\\000\\chromeWin64ForTests\\chrome.exe"
+    Open Browser    https://${MyHostname}:10210/webuploader    Chrome    options=add_argument("--disable-infobars");add_argument("--lang\=en");add_argument("--enable-chrome-browser-cloud-management");binary_location=r"C:\\000\\chromeWin64ForTests\\chrome.exe"
     Maximize Browser Window
     Wait Until Element Is Visible    id=kc-locale-dropdown    timeout=15s
 
